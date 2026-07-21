@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+  <defs>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4d96ff"/>
+      <stop offset="50%" stop-color="#c77dff"/>
+      <stop offset="100%" stop-color="#ff6b6b"/>
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151520"/>
+      <stop offset="100%" stop-color="#1f1f2e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#4d96ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4d96ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <!-- ambient glow behind everything -->
+  <circle cx="240" cy="240" r="220" fill="url(#glow)"/>
+
+  <!-- floating decorative blobs -->
+  <circle cx="80" cy="90" r="46" fill="#ff6b6b" opacity="0.16" filter="url(#soft)"/>
+  <circle cx="410" cy="120" r="60" fill="#6bcb77" opacity="0.14" filter="url(#soft)"/>
+  <circle cx="400" cy="390" r="50" fill="#c77dff" opacity="0.16" filter="url(#soft)"/>
+
+  <!-- outer rotating-style gradient ring -->
+  <circle cx="240" cy="240" r="176" fill="none" stroke="url(#ringGrad)" stroke-width="3" opacity="0.9"/>
+  <circle cx="240" cy="240" r="176" fill="none" stroke="url(#ringGrad)" stroke-width="10" opacity="0.12"/>
+
+  <!-- dashed orbit -->
+  <circle cx="240" cy="240" r="200" fill="none" stroke="#8888aa" stroke-width="1.5" stroke-dasharray="2 10" opacity="0.4"/>
+
+  <!-- core disc -->
+  <circle cx="240" cy="240" r="150" fill="url(#coreGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- monogram -->
+  <text x="240" y="270" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="118" fill="#f0f0f8" letter-spacing="-4">RJ</text>
+
+  <!-- terminal cursor accent under monogram -->
+  <rect x="205" y="292" width="70" height="6" rx="3" fill="url(#ringGrad)"/>
+
+  <!-- orbiting code bracket chip -->
+  <g transform="translate(378,86)">
+    <rect x="-34" y="-22" width="68" height="44" rx="12" fill="#12121a" stroke="#4d96ff" stroke-width="1.5"/>
+    <text x="0" y="7" text-anchor="middle" font-family="'Courier New', monospace" font-weight="700" font-size="22" fill="#4d96ff">&lt;/&gt;</text>
+  </g>
+
+  <!-- orbiting git-branch chip -->
+  <g transform="translate(90,388)">
+    <rect x="-30" y="-24" width="60" height="48" rx="12" fill="#12121a" stroke="#6bcb77" stroke-width="1.5"/>
+    <circle cx="-10" cy="-6" r="5" fill="#6bcb77"/>
+    <circle cx="-10" cy="8" r="5" fill="#6bcb77"/>
+    <circle cx="10" cy="-6" r="5" fill="#ffd93d"/>
+    <path d="M -10 -1 Q -10 8 10 8" stroke="#6bcb77" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- orbiting pulse dot -->
+  <g transform="translate(410,330)">
+    <circle r="16" fill="#12121a" stroke="#ff9f43" stroke-width="1.5"/>
+    <circle r="6" fill="#ff9f43"/>
+  </g>
+
+  <!-- small floating dots for texture -->
+  <circle cx="60" cy="250" r="4" fill="#4d96ff" opacity="0.6"/>
+  <circle cx="46" cy="210" r="3" fill="#c77dff" opacity="0.5"/>
+  <circle cx="430" cy="220" r="4" fill="#ff6b6b" opacity="0.5"/>
+</svg>
