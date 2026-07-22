@@ -1,3 +1,22 @@
+// Mobile nav toggle
+const navToggle = document.getElementById('navToggle');
+const navMenu = document.getElementById('navMenu');
+if (navToggle && navMenu) {
+  const closeMenu = () => {
+    navMenu.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  };
+  navToggle.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  navMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMenu));
+  document.addEventListener('click', (e) => {
+    if (!navMenu.classList.contains('open')) return;
+    if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) closeMenu();
+  });
+}
+
 // Cursor
 const cursor = document.getElementById('cursor');
 const ring = document.getElementById('cursorRing');
