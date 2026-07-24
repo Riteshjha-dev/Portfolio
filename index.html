@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ritesh Jha — Full Stack Developer</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">RJ.dev</span>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#built">built</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <a href="mailto:riteshjhacic@gmail.com" target="_blank" rel="noopener" class="nav-cta">hire me →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+  </div>
+  <div class="hero-grid">
+    <div class="hero-content fade-in">
+      <div class="hero-tag">
+        <span class="dot"></span>
+        Open to collabs, freelance & full-time roles
+      </div>
+      <h1>
+        <span class="line1">RITESH JHA</span>
+        <span class="line2">Full Stack</span>
+        <span class="line3">Developer</span>
+      </h1>
+      <p class="hero-sub">
+        I'm a <span>B.Tech student</span> who builds <span>fast, beautiful, production-ready</span> web apps — from pixel-perfect frontends to solid backends and third-party API integrations. Based in <span>Delhi, India 🇮🇳</span>
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">🚀 View my work</a>
+        <a href="#contact" class="btn-secondary">💬 Let's talk</a>
+      </div>
+    </div>
+    <div class="hero-visual fade-in" style="transition-delay:0.1s;">
+      <img src="assets/avatar.svg" alt="Ritesh Jha — full stack developer monogram illustration" class="avatar-img"/>
+    </div>
+  </div>
+  <div class="hero-stats fade-in" style="transition-delay:0.2s;">
+    <div>
+      <div class="stat-num c-blue" id="hero-repo-count">3+</div>
+      <div class="stat-label">Projects shipped</div>
+    </div>
+    <div>
+      <div class="stat-num c-purple" id="hero-tech-count">8+</div>
+      <div class="stat-label">Technologies</div>
+    </div>
+    <div>
+      <div class="stat-num c-green" id="hero-passion-count">100%</div>
+      <div class="stat-label">Passion</div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH MARQUEE -->
+<div class="tech-section" style="padding:0;">
+  <div class="tech-marquee">
+    <div class="tech-track">
+      <span class="tech-chip"><span class="dot" style="background:#f7df1e;"></span>JavaScript</span>
+      <span class="tech-chip"><span class="dot" style="background:#61dafb;"></span>React</span>
+      <span class="tech-chip"><span class="dot" style="background:#68a063;"></span>Node.js</span>
+      <span class="tech-chip"><span class="dot" style="background:#47a248;"></span>MongoDB</span>
+      <span class="tech-chip"><span class="dot" style="background:#e34f26;"></span>HTML5</span>
+      <span class="tech-chip"><span class="dot" style="background:#264de4;"></span>CSS3</span>
+      <span class="tech-chip"><span class="dot" style="background:#1db954;"></span>Spotify API</span>
+      <span class="tech-chip"><span class="dot" style="background:#3776ab;"></span>Python</span>
+      <span class="tech-chip"><span class="dot" style="background:#f05032;"></span>Git</span>
+      <span class="tech-chip"><span class="dot" style="background:#38bdf8;"></span>Tailwind CSS</span>
+      <span class="tech-chip"><span class="dot" style="background:#f7df1e;"></span>JavaScript</span>
+      <span class="tech-chip"><span class="dot" style="background:#61dafb;"></span>React</span>
+      <span class="tech-chip"><span class="dot" style="background:#68a063;"></span>Node.js</span>
+      <span class="tech-chip"><span class="dot" style="background:#47a248;"></span>MongoDB</span>
+      <span class="tech-chip"><span class="dot" style="background:#e34f26;"></span>HTML5</span>
+      <span class="tech-chip"><span class="dot" style="background:#264de4;"></span>CSS3</span>
+      <span class="tech-chip"><span class="dot" style="background:#1db954;"></span>Spotify API</span>
+      <span class="tech-chip"><span class="dot" style="background:#3776ab;"></span>Python</span>
+      <span class="tech-chip"><span class="dot" style="background:#f05032;"></span>Git</span>
+      <span class="tech-chip"><span class="dot" style="background:#38bdf8;"></span>Tailwind CSS</span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">// 01. about me</div>
+  <h2 class="section-title fade-in">Who am I?</h2>
+  <div class="about-grid">
+    <div class="about-text fade-in">
+      <p>Hey! I'm <span>Ritesh Jha</span>, a <span>B.Tech student</span> and self-driven full stack developer from <span>Delhi, India</span>. I love building things for the web — from idea to deployment.</p>
+      <p>My journey started with curiosity about how websites work, and now I build everything from <span>music streaming apps</span> to <span>payment platforms</span> and custom developer tools — alongside my coursework, not instead of it.</p>
+      <p>I believe in writing <span>clean, maintainable code</span>, shipping fast, and constantly leveling up. Currently open to <span>collaborations, freelance work, and full-time roles</span>.</p>
+      <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="mailto:riteshjhacic@gmail.com" target="_blank" rel="noopener" class="btn-primary" style="font-size:14px;padding:10px 22px;">📩 Email me</a>
+        <a href="https://github.com/Riteshjha-dev" target="_blank" rel="noopener" class="btn-secondary" style="font-size:14px;padding:10px 22px;">⬡ GitHub</a>
+      </div>
+    </div>
+    <div class="about-highlights fade-in" style="transition-delay:0.15s;">
+      <div class="highlight-card">
+        <div class="h-icon" style="background:rgba(77,150,255,0.15);">🎯</div>
+        <div><div class="h-title">Goal-oriented</div><div class="h-desc">Focused on shipping real products</div></div>
+      </div>
+      <div class="highlight-card">
+        <div class="h-icon" style="background:rgba(107,203,119,0.15);">🔄</div>
+        <div><div class="h-title">Full Stack</div><div class="h-desc">Frontend + Backend + APIs</div></div>
+      </div>
+      <div class="highlight-card">
+        <div class="h-icon" style="background:rgba(199,125,255,0.15);">⚡</div>
+        <div><div class="h-title">Fast learner</div><div class="h-desc">Adapts quickly to new stacks</div></div>
+      </div>
+      <div class="highlight-card">
+        <div class="h-icon" style="background:rgba(255,107,107,0.15);">🌐</div>
+        <div><div class="h-title">API Integrations</div><div class="h-desc">Spotify, Razorpay & more</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I'VE BUILT -->
+<section id="built">
+  <div class="section-label">// 02. what i've built</div>
+  <h2 class="section-title fade-in">Where my repos live</h2>
+  <p class="section-sub fade-in">A quick tour of the kind of problems I like solving — pulled together from what's actually sitting in my GitHub.</p>
+  <div class="about-highlights fade-in" style="transition-delay:0.1s;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;">
+    <div class="highlight-card">
+      <div class="h-icon" style="background:rgba(77,150,255,0.15);">🎨</div>
+      <div><div class="h-title">Web & UI clones</div><div class="h-desc">Spotify player UI, Razorpay landing page — pixel-perfect practice</div></div>
+    </div>
+    <div class="highlight-card">
+      <div class="h-icon" style="background:rgba(255,159,67,0.15);">🧠</div>
+      <div><div class="h-title">DSA & algorithms</div><div class="h-desc">Dijkstra's shortest path and other CS fundamentals from the syllabus</div></div>
+    </div>
+    <div class="highlight-card">
+      <div class="h-icon" style="background:rgba(199,125,255,0.15);">🕹️</div>
+      <div><div class="h-title">Browser games & interactive</div><div class="h-desc">Simon Says memory game, a canvas polygon evolution simulator with physics</div></div>
+    </div>
+    <div class="highlight-card">
+      <div class="h-icon" style="background:rgba(107,203,119,0.15);">🛠️</div>
+      <div><div class="h-title">Everyday tools</div><div class="h-desc">To-do list app and small utilities — nailing state & DOM basics</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS / ACTIVE REPOS -->
+<section id="projects" style="background:var(--bg2);border-top:1px solid var(--border);">
+  <div class="section-label">// 03. active repos</div>
+  <h2 class="section-title fade-in">Live from GitHub</h2>
+  <p class="section-sub fade-in">These load straight from <a href="https://github.com/Riteshjha-dev" target="_blank" rel="noopener" style="color:var(--c4);">github.com/Riteshjha-dev</a> — always up to date with whatever I pushed most recently.</p>
+  <div class="projects-grid fade-in" style="transition-delay:0.1s;" id="projects-grid">
+    <div class="repo-loading-card" id="projects-loading">⬡ Pulling latest repos from github.com/Riteshjha-dev …</div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills-section">
+  <div class="section-label">// 04. skills</div>
+  <h2 class="section-title fade-in">My toolbox</h2>
+  <p class="section-sub fade-in">Technologies I work with regularly.</p>
+  <div class="skills-grid fade-in" style="transition-delay:0.1s;">
+    <div class="skill-card" style="border-color:rgba(247,223,30,0.2);">
+      <span class="skill-icon">⚡</span>
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-level" style="color:var(--c2);">Advanced</div>
+      <div class="skill-bar"><div class="skill-fill" style="--w:90%;background:var(--c2);"></div></div>
+    </div>
+    <div class="skill-card" style="border-color:rgba(97,218,251,0.2);">
+      <span class="skill-icon">⚛️</span>
+      <div class="skill-name">React</div>
+      <div class="skill-level" style="color:var(--c4);">Intermediate</div>
+      <div class="skill-bar"><div class="skill-fill" style="--w:75%;background:var(--c4);"></div></div>
+    </div>
+    <div class="skill-card" style="border-color:rgba(104,160,99,0.2);">
+      <span class="skill-icon">🖥️</span>
+      <div class="skill-name">Node.js</div>
+      <div class="skill-level" style="color:var(--c3);">Intermediate</div>
+      <div class="skill-bar"><div class="skill-fill" style="--w:70%;background:var(--c3);"></div></div>
+    </div>
+    <div class="skill-card" style="border-color:rgba(71,162,72,0.2);">
+      <span class="skill-icon">🍃</span>
+      <div class="skill-name">MongoDB</div>
+      <div class="skill-level" style="color:var(--c3);">Intermediate</div>
+      <div class="skill-bar"><div class="skill-fill" style="--w:65%;background:var(--c3);"></div></div>
+    </div>
+    <div class="skill-card" style="border-color:rgba(229,79,38,0.2);">
+      <span class="skill-icon">🌐</span>
+      <div class="skill-name">HTML / CSS</div>
+      <div class="skill-level" style="color:var(--c1);">Advanced</div>
+      <div class="skill-bar"><div class="skill-fill" style="--w:92%;background:var(--c1);"></div></div>
+    </div>
+    <div class="skill-card" style="border-color:rgba(56,189,248,0.2);">
+      <span class="skill-icon">🎨</span>
+      <div class="skill-name">Tailwind CSS</div>
+      <div class="skill-level" style="color:var(--c4);">Intermediate</div>
+      <div class="skill-bar"><div class="skill-fill" style="--w:72%;background:var(--c4);"></div></div>
+    </div>
+    <div class="skill-card" style="border-color:rgba(240,80,50,0.2);">
+      <span class="skill-icon">🐙</span>
+      <div class="skill-name">Git & GitHub</div>
+      <div class="skill-level" style="color:var(--c6);">Intermediate</div>
+      <div class="skill-bar"><div class="skill-fill" style="--w:78%;background:var(--c6);"></div></div>
+    </div>
+    <div class="skill-card" style="border-color:rgba(199,125,255,0.2);">
+      <span class="skill-icon">🔗</span>
+      <div class="skill-name">REST APIs</div>
+      <div class="skill-level" style="color:var(--c5);">Advanced</div>
+      <div class="skill-bar"><div class="skill-fill" style="--w:85%;background:var(--c5);"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GITHUB CARD -->
+<section class="github-section">
+  <div class="section-label">// 05. open source</div>
+  <h2 class="section-title fade-in">GitHub activity</h2>
+  <div class="github-card fade-in" style="transition-delay:0.1s;">
+    <div class="github-info">
+      <h3>Riteshjha-dev</h3>
+      <p>Check out my repositories and contributions on GitHub.</p>
+      <a href="https://github.com/Riteshjha-dev" target="_blank" rel="noopener" class="github-link" style="margin-top:1rem;display:inline-flex;">
+        ⬡ &nbsp; View GitHub Profile
+      </a>
+    </div>
+    <div class="github-stats">
+      <div class="g-stat">
+        <div class="g-num" id="gh-repo-count">–</div>
+        <div class="g-label">Repos</div>
+      </div>
+      <div class="g-stat">
+        <div class="g-num" style="color:var(--c3);">Active</div>
+        <div class="g-label">Status</div>
+      </div>
+      <div class="g-stat">
+        <div class="g-num" style="color:var(--c5);" id="gh-location">Delhi</div>
+        <div class="g-label">Location</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:var(--bg2);border-top:1px solid var(--border);">
+  <div class="section-label">// 06. contact</div>
+  <div class="contact-header fade-in">
+    <div>
+      <h2 class="section-title" style="margin-bottom:0;">Let's work together</h2>
+      <div class="avail-badge" style="margin-top:0.75rem;"><span style="width:8px;height:8px;border-radius:50%;background:var(--c3);display:inline-block;animation:pulse 2s infinite;"></span> Available for new projects</div>
+    </div>
+    <img src="assets/connect.svg" alt="Illustration of two connected profiles, representing collaboration" class="connect-img"/>
+  </div>
+  <div class="contact-grid fade-in" style="transition-delay:0.1s;">
+    <div class="contact-form">
+      <div class="form-group">
+        <label>Your name</label>
+        <input type="text" placeholder="John Doe"/>
+      </div>
+      <div class="form-group">
+        <label>Email address</label>
+        <input type="email" placeholder="john@example.com"/>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Tell me about your project..."></textarea>
+      </div>
+      <button class="form-submit" onclick="alert('Thanks! Ritesh will get back to you soon 🚀')">Send message →</button>
+    </div>
+    <div class="contact-info">
+      <a class="contact-item" href="mailto:riteshjhacic@gmail.com" target="_blank" rel="noopener">
+        <div class="c-ico c-ico-mail">📧</div>
+        <div><div class="c-name">Email</div><div class="c-val">riteshjhacic@gmail.com</div></div>
+      </a>
+      <a class="contact-item" href="https://github.com/Riteshjha-dev" target="_blank" rel="noopener">
+        <div class="c-ico c-ico-gh">⬡</div>
+        <div><div class="c-name">GitHub</div><div class="c-val">github.com/Riteshjha-dev</div></div>
+      </a>
+      <a class="contact-item" href="https://www.linkedin.com/in/riteshjha-dev" target="_blank" rel="noopener">
+        <div class="c-ico c-ico-li">💼</div>
+        <div><div class="c-name">LinkedIn</div><div class="c-val">www.linkedin.com/in/riteshjha-dev</div></div>
+      </a>
+      <div class="contact-item" style="cursor:default;">
+        <div class="c-ico c-ico-loc">📍</div>
+        <div><div class="c-name">Location</div><div class="c-val">Delhi, India 🇮🇳</div></div>
+      </div>
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.2rem 1.4rem;">
+        <div style="font-size:13px;color:var(--muted);margin-bottom:0.75rem;font-family:'IBM Plex Mono',monospace;">// response time</div>
+        <div style="font-size:15px;font-weight:500;">⚡ Usually within 24 hours</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">RJ.dev</span>
+  <p>© 2026 Ritesh Jha · Built with ❤️ in Delhi</p>
+  <div class="footer-links">
+    <a href="https://github.com/Riteshjha-dev" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/riteshjha-dev" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:riteshjhacic@gmail.com" target="_blank" rel="noopener">Email</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
